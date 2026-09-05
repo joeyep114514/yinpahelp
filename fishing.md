@@ -1,6 +1,6 @@
 # 钓鱼插件攻略（ver1.1.0）
 ![CCBYNC](/by_nc.svg) 
-> [WARN]
+> [!CAUTION]
 > 该插件系由维护者改版，请不要与上游插件互通！
 
 > 资料来源：nonebot-plugin-fishing2 v1.1.0 源码逐行核对。1d(X) 表示随机取 1~X 的整数。
