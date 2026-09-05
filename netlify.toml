@@ -1,0 +1,18 @@
+[build]
+  command = "npm run docs:build"
+  publish = ".vitepress/dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# VitePress 使用客户端路由，为了让深链接/直接访问页面正常返回，
+# 对所有路径回退到 404.html（VitePress 内置 SPA 回退逻辑）。
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 200
+
+[headers]
+  # 默认安全响应头
+  X-Content-Type-Options = "nosniff"
+  X-Frame-Options = "DENY"
